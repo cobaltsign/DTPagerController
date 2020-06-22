@@ -43,7 +43,7 @@ open class DTPagerController: UIViewController, UIScrollViewDelegate {
     /// Height of segmented control bar
     /// Get only
     open var segmentedControlHeight: CGFloat {
-        return viewControllers.count <= 1 ? 0 : preferredSegmentedControlHeight
+        return viewControllers.count < 1 ? 0 : preferredSegmentedControlHeight
     }
     
     /// Preferred of scroll indicator.
@@ -60,7 +60,7 @@ open class DTPagerController: UIViewController, UIScrollViewDelegate {
     /// Height of segmented indicator
     /// Get only
     open var scrollIndicatorHeight: CGFloat {
-        return viewControllers.count <= 1 ? 0 : perferredScrollIndicatorHeight
+        return viewControllers.count < 1 ? 0 : perferredScrollIndicatorHeight
     }
     
     /// Horizontal inset for segmented control
